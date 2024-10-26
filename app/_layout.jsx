@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Slot, SplashScreen, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 
+// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
