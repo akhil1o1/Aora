@@ -1,7 +1,6 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import { Text, View, Image, ScrollView } from "react-native";
-import { Link } from "expo-router";
 import { router, Redirect } from "expo-router";
 
 import { images } from "../constants";
@@ -41,12 +40,14 @@ export default function App() {
                   Where Creativity Meets Innovation: Embark on a Journey of
                   Limitless Exploration with Aora
                </Text>
-               <View className="mt-4">
-                  <CustomButton title={"Continue with Email"} handlePress={() => router.push("/sign-in")} containerStyles={"mt-7"} />
-               </View>
+               <CustomButton
+                  title={"Continue with Email"}
+                  handlePress={() => router.push("/sign-in")}
+                  containerStyles={"mt-7"}
+               />
             </View>
          </ScrollView>
-         <StatusBar backgroundColor="#161622" style="light"/>
+         <StatusBar backgroundColor="#161622" style="light" />
       </SafeAreaView>
    );
 }
