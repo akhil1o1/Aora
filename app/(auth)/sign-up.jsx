@@ -23,8 +23,7 @@ const SignUp = () => {
       if (
          !email.trim() ||
          !password.trim() ||
-         !username.trim() ||
-         password.length < 6
+         !username.trim()
       ) {
          Alert.alert("Error", "Please fill in all the details.");
          return;
@@ -80,7 +79,7 @@ const SignUp = () => {
                   />
                   <FormField
                      title={"Password"}
-                     placeholder={"Enter Password, min 6 charectors"}
+                     placeholder={"Enter Password"}
                      onChangeText={(password) => setPassword(password)}
                      extraStyles={"mt-4"}
                      value={password}

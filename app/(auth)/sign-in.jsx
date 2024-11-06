@@ -19,7 +19,7 @@ const SignIn = () => {
 
    const submit = async () => {
       console.table({ email, password });
-      if (!email.trim() || !password.trim() || password.length < 6) {
+      if (!email.trim() || !password.trim()) {
          Alert.alert("Error", "Please fill in all the details.");
          return;
       }

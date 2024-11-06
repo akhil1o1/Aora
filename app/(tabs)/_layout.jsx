@@ -2,6 +2,7 @@ import { Text, View, Image } from "react-native";
 import { Tabs, Redirect } from "expo-router";
 
 import { icons } from "../../constants";
+import { StatusBar } from "expo-status-bar";
 
 const TabsLayout = () => {
    const TabIcon = ({ icon, color, focused, name }) => {

@@ -1,7 +1,6 @@
 import 'react-native-url-polyfill/auto'
 
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StatusBar } from "expo-status-bar";
 import { Text, View, Image, ScrollView } from "react-native";
 import { router, Redirect } from "expo-router";
 
@@ -58,7 +57,6 @@ export default function App() {
                />
             </View>
          </ScrollView>
-         <StatusBar backgroundColor="#161622" style="light" />
       </SafeAreaView>
    );
 }
