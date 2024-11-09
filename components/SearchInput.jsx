@@ -15,7 +15,7 @@ const SearchInput = ({
       <View className={`h-16 px-4 w-full bg-black-100 rounded-lg flex-row items-center ${extraStyles}`}>
          <TextInput
             placeholder={placeholder}
-            className="text-base text-white flex-1 font-pregular mt-0.5"
+            className="text-base text-white flex-1 font-pregular mb-4"
             placeholderTextColor={"#7B7B8B"}
             onChangeText={onChangeText}
             value={value}
