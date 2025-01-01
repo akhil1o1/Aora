@@ -19,7 +19,7 @@ const SignUp = () => {
    const { setUser, setIsLoggedIn } = useGlobalContext();
 
    const submit = async () => {
-      console.table({ username, email, password });
+      // console.table({ username, email, password });
       if (
          !email.trim() ||
          !password.trim() ||
