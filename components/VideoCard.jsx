@@ -14,6 +14,8 @@ const VideoCard = ({
 }) => {
    const [play, setPlay] = useState(false);
 
+   // console.log("video" , video)
+
    return (
       <View className="flex-col items-center px-4 mb-10">
          <View className="flex-row gap-3 items-start">
@@ -53,8 +55,11 @@ const VideoCard = ({
                source={{ uri: video }}
                className="w-full h-60 rounded-xl mt-3 bg-white"
                resizeMode={ResizeMode.CONTAIN}
-               useNativeControls
-               shouldPlay
+               useNativeControls={true}
+               shouldPlay={true}
+               onError={(error) =>
+                  console.error("Video playback error:", error)
+               }
                onPlaybackStatusUpdate={(status) => {
                   if (status.didJustFinish) {
                      setPlay(false);
